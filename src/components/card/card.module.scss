@@ -10,16 +10,27 @@
     margin: 6px;
   }
 
+  .leftSpan{
+    margin-right: 5px;
+    font-weight: bold;
+  }
+
+
+  .unselected > svg > path{
+    stroke: #999999;;
+  }
+
+  .selected > svg > path{
+    stroke: black;
+    fill: black;
+  }
+
   .topSectionCard {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  // .photoContainer {
-  //   width: 100%;
-  //   height: 87px;
-  // }
   .bottomCard {
     display: block;
   }
@@ -107,16 +118,23 @@
     margin: 6px;
   }
 
+
+  
+  .unselected > svg > path{
+    stroke: #999999;;
+  }
+
+  .selected > svg > path{
+    stroke: black;
+    fill: black;
+  }
+
   .topSectionCard {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  // .photoContainer {
-  //   width: 100%;
-  //   height: 87px;
-  // }
   .bottomCard {
     display: none;
   }

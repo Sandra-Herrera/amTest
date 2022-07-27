@@ -46,6 +46,76 @@
   .buttonFavoritesFooter:hover {
     background-color: rgba(107, 99, 181, 0.6);
   }
+
+  .favContainer{
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    border-radius: 60px;
+    background-clip: padding-box;
+    background-size: cover;
+  }
+  figure {
+    margin: 0px;
+  }
+
+  .nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav li {
+      display: block;
+      position: relative;
+      float: left;
+      background: #6b63b5;
+  }
+
+  .nav li button {
+      display: block;
+      padding: 0;
+      text-decoration: none;
+      width: 200px;
+      line-height: 35px;
+      /* this is the hieght of the menu items */
+      color: #ffffff;
+      border:none;
+      /* list item font color */
+  }
+  .nav li ul li div button{
+    display: block;
+    padding: 0;
+    width: 126px;
+    line-height: 35px;
+    /* this is the hieght of the menu items */
+    color: #ffffff;
+    background-color: #6b63b5;
+    margin-top: 2px;
+    
+    /* list item font color */
+  }
+
+
+
+  /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+  .nav ul {
+      position: absolute;
+      padding: 0;
+      left: 0;
+  }
+
+  .deleteIcon{
+    cursor: pointer;
+  }
+ 
 }
 
 
@@ -99,4 +169,75 @@
   .buttonFavoritesFooter:hover {
     background-color: rgba(107, 99, 181, 0.6);
   }
+
+  
+  .favContainer{
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    border-radius: 60px;
+    background-clip: padding-box;
+    background-size: cover;
+  }
+  figure {
+    margin: 0px;
+  }
+  
+  .nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav li {
+      display: block;
+      position: relative;
+      float: left;
+      background: #6b63b5;
+  }
+
+  .nav li button {
+      display: block;
+      padding: 0;
+      text-decoration: none;
+      width: 165px;
+      line-height: 35px;
+      /* this is the hieght of the menu items */
+      color: #ffffff;
+      border:none;
+      /* list item font color */
+  }
+  .nav li ul li div button{
+    display: block;
+    padding: 0;
+    width: 106px;
+    line-height: 35px;
+    /* this is the hieght of the menu items */
+    color: #ffffff;
+    background-color: #6b63b5;
+    margin-top: 2px;
+    
+    /* list item font color */
+  }
+
+
+
+  /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+  .nav ul {
+      position: absolute;
+      padding: 0;
+      left: 0;
+  }
+
+  .deleteIcon{
+    cursor: pointer;
+  }
+
 }

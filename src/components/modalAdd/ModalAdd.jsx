@@ -1,19 +1,44 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import Close from "../../icon/Close";
 import styles from "./modalAdd.module.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { postCharacters } from "../../store/slices/charactersThunks";
+import { setVibilityModal } from "../../store/slices/charactersSlice";
 
 export function ModalAdd(props) {
-  const onClickCloseModal = () => {
-    props.setVisible(false);
-  };
+  const { isModalVisible } = useSelector((state) => state.characters);
+  const dispatch = useDispatch();
 
-  return props.visible ? (
+  const[character,setCharacter] = useState({id:''});
+  
+  useEffect(()=>{
+    setCharacter({...character,id:new Date().getUTCMilliseconds()})
+  },[isModalVisible]);
+
+  const handleChange = (e) => {
+    const {id,value} = e.target;
+    setCharacter({...character,[id]:value});
+  }
+
+  const onClickGender = (e) => {
+    const {value} = e.target;
+    setCharacter({...character,'gender':value});
+  }
+  
+  const onClickPosition = (e) => {
+    const {value} = e.target;
+    const staff = value === 'staff' ? true : false;
+    const student = value === 'student' ? true : false;
+    setCharacter({...character,'hogwartsStaff':staff,'hogwartsStudent':student});
+  }
+  
+  return isModalVisible ? (
     <>
       <section>
         <div id="myModal" className={styles.modal}>
           <div className={styles.centerContent}>
             <div className={styles.modalContent}>
-              <span className={styles.close} onClick={onClickCloseModal}>
+              <span className={styles.close} onClick={()=>dispatch(setVibilityModal({isModalVisible:false}))}>
                 <Close />
               </span>
               <h1 className={styles.titleAddCharacter}>Agrega un personaje</h1>
@@ -23,44 +48,57 @@ export function ModalAdd(props) {
                   <input
                     type={"text"}
                     id="name"
-                    className={styles.nameInput}
+                    className={styles.inputText}
+                    onChange={handleChange}
+                    tabIndex="1"
                   ></input>
                   <label>COLOR DE OJOS</label>
                   <input
                     type={"text"}
-                    id="eyes"
-                    className={styles.eyesInput}
+                    id="eyeColour"
+                    className={styles.inputText}
+                    onChange={handleChange}
+                    tabIndex="3"
                   ></input>
                   <label>GÉNERO</label>
                   <p>
                     <input
                       type={"radio"}
-                      value="woman"
+                      value="female"
                       id="genderWoman"
+                      name="gender"
                       className={styles.genderInput}
+                      onClick={onClickGender}
+                      tabIndex="5"
                     />{" "}
-                    <label for="woman">Mujer</label>
+                    <label htmlFor="woman">Mujer</label>
                     <input
                       type={"radio"}
-                      value="man"
+                      value="male"
                       id="genderMan"
+                      name="gender"
                       className={styles.genderInput}
+                      onClick={onClickGender}
                     />{" "}
-                    <label for="man">Hombre</label>
+                    <label htmlFor="man">Hombre</label>
                   </p>
                 </section>
                 <section className={styles.inputsContainerRight}>
                   <label>CUMPLEAÑOS</label>
                   <input
                     type={"text"}
-                    id="birthday"
-                    className={styles.birthdayInput}
+                    id="dateOfBirth"
+                    onChange={handleChange}
+                    className={styles.inputText}
+                    tabIndex="2"
                   ></input>
                   <label>COLOR DE PELO</label>
                   <input
                     type={"text"}
-                    id="hair"
-                    className={styles.hairInput}
+                    id="hairColour"
+                    className={styles.inputText}
+                    onChange={handleChange}
+                    tabIndex="4"
                   ></input>
                   <label>POSICIÓN</label>
                   <p>
@@ -68,16 +106,21 @@ export function ModalAdd(props) {
                       type={"radio"}
                       value="student"
                       id="positionStudent"
+                      name="position"
                       className={styles.positionInput}
+                      onClick={onClickPosition}
+                      tabIndex="6"
                     />{" "}
-                    <label for="student">Estudiante</label>
+                    <label htmlFor="student">Estudiante</label>
                     <input
                       type={"radio"}
                       value="staff"
                       id="positionStaff"
+                      name="position"
                       className={styles.positionInput}
+                      onClick={onClickPosition}
                     />{" "}
-                    <label for="staff">Staff</label>
+                    <label htmlFor="staff">Staff</label>
                   </p>
                 </section>
               </section>
@@ -85,7 +128,7 @@ export function ModalAdd(props) {
                 <div>FOTOGRAFIA</div>
               </section>
               <section className={styles.saveButtonArea}>
-                <button className={styles.saveButtonModal}>Guardar</button>
+                <button className={styles.saveButtonModal} onClick={()=>dispatch(postCharacters(character))}>Guardar</button>
               </section>
             </div>
           </div>
