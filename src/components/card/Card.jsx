@@ -3,7 +3,6 @@ import styles from "./card.module.scss";
 import { useDispatch } from "react-redux";
 import { FavoritesIcon } from "../../icon/FavoritesIcon"
 import { putCharactersFavorite } from "../../store/slices/charactersThunks";
-//import { setFavorite } from "../../store/slices/charactersSlice";
 
 
 const Card = (props) => {

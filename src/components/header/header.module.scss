@@ -36,7 +36,7 @@
     border-color: #6b63b5;
     background-color: #0000;
     font-family: "Open Sans";
-    font-size: 13px;
+    font-size: 20px;
     color: #ffff;
     font-weight: 600;
     margin: 10px;
@@ -58,9 +58,6 @@
 
 //comienza Media Queries
 @media (max-width: 930px) {
-  // .hogwarts {
-  //   background-image: url("../../img/imgHogwarts.png");
-  // }
   .containerHeader {
     display: flex;
     width: 100%;
