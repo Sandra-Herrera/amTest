@@ -10,7 +10,7 @@ const LandingPage = () => {
 
     return(
         <>
-          <div className={styles.landingContainer}>
+          <div className={styles.landingContainer} >
             <Favorites/>
             <Header/>
             <section className={styles.cardsContainer}>

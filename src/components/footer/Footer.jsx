@@ -23,11 +23,11 @@ const Footer = () => {
         visible={addModal.visibility}
         attrProduct={addModal.modalCharacter}
       ></ModalAdd>
-      <footer>
-        <button className={styles.buttonsFooter}>
+      <footer className={styles.containerFooter}>
+        <button className={styles.buttonFavoritesFooter}>
           FAVORITOS <FavoritesIcon />
         </button>
-        <button className={styles.buttonsFooter} onClick={onAdd}>
+        <button className={styles.buttonAddFooter} onClick={onAdd}>
           AGREGAR <AddCharacter />
         </button>
       </footer>

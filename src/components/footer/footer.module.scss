@@ -1,5 +1,50 @@
 @import"../../App.scss";
 
-.buttonsFooter{
-    
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
 }
+
+.buttonAddFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6B63B5;
+    border-color: #6B63B5;
+    border-radius: 0px 4px 0px 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:#FFFF;
+    width: 143px;
+    height: 36px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonAddFooter:hover{
+    background-color: rgba(107, 99, 181, 0.6);
+}
+
+.buttonFavoritesFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6B63B5;
+    border-color: #6B63B5;
+    border-radius: 4px 0px 0px 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:#FFFF;
+    width: 143px;
+    height: 36px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonFavoritesFooter:hover{
+    background-color: rgba(107, 99, 181, 0.6);
+}
+

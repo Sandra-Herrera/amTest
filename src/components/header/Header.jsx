@@ -6,7 +6,7 @@ import imgHP from "../../img/imgHP.png";
 const Header = () => {
   return (
     <>
-      <section className={styles.containerHeader}>
+      <section className={`${styles.containerHeader} ${styles.hogwarts}`}>
         <main>
           <figure>
             <img className={styles.logo} src={imgHP} alt="imgLogo" />
