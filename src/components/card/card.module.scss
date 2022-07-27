@@ -2,11 +2,9 @@
 @media (min-width: 930px) and (max-width: 4000px) {
   .cardCharacter {
     display: flex;
-    width: 140px;
+    width: 300px;
     height: 181px;
-    border: solid 2px;
-    border-color: black;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
     border-radius: 5px;
     margin: 6px;
@@ -15,25 +13,68 @@
   .topSectionCard {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  // .photoContainer {
+  //   width: 100%;
+  //   height: 87px;
+  // }
+  .bottomCard {
+    display: block;
+  }
+
+  .image {
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    border-radius: 60px;
+    background-clip: padding-box;
+    background-size: cover;
+  }
+  figure {
+    margin: 0px;
+  }
+
+  .gryffindorGrandient {
+    background: $GryffindorGrandient;
+  }
+  .slytherinGrandient {
+    background: $SlytherinGrandient;
+  }
+  .ravenclawGrandient {
+    background: $RavenclawGrandient;
+  }
+  .hufflepuffGrandient {
+    background: $HufflepuffGrandient;
+  }
+  .whiteBackgroundColor{
+    background: white;
   }
 
   .photoContainer {
-    background: linear-gradient(
-      to right,
-      rgba(255, 0, 0, 1),
-      rgba(254, 212, 130, 1)
-    );
-    width: 100%;
-    height: 87px;
+    width: 37%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
   }
-
   .infoCharacter {
-    height: 94px;
-    background-color: #ffff;
+    height: 100%;
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
   }
 
   h2 {
-    margin: 9px 0px;
+    margin: 0px;
   }
 
   .name {
@@ -47,16 +88,12 @@
     color: #999999;
   }
 
-  .buttonSave {
+  .buttonFav {
     border: none;
     cursor: pointer;
     background: none;
   }
 }
-
-
-
-
 
 //comienza Media Queries
 @media (max-width: 930px) {
@@ -64,8 +101,6 @@
     display: flex;
     width: 140px;
     height: 181px;
-    border: solid 2px;
-    border-color: black;
     flex-flow: column;
     align-items: center;
     border-radius: 5px;
@@ -75,25 +110,68 @@
   .topSectionCard {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  // .photoContainer {
+  //   width: 100%;
+  //   height: 87px;
+  // }
+  .bottomCard {
+    display: none;
+  }
+
+  .image {
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    border-radius: 60px;
+    background-clip: padding-box;
+    background-size: cover;
+  }
+  figure {
+    margin: 0px;
+  }
+
+  .gryffindorGrandient {
+    background: $GryffindorGrandient;
+  }
+  .slytherinGrandient {
+    background: $SlytherinGrandient;
+  }
+  .ravenclawGrandient {
+    background: $RavenclawGrandient;
+  }
+  .hufflepuffGrandient {
+    background: $HufflepuffGrandient;
+  }
+  .whiteBackgroundColor{
+    background: rgb(255, 255, 255);
   }
 
   .photoContainer {
-    background: linear-gradient(
-      to right,
-      rgba(255, 0, 0, 1),
-      rgba(254, 212, 130, 1)
-    );
     width: 100%;
     height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
   }
-
   .infoCharacter {
     height: 94px;
-    background-color: #FFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
   }
 
   h2 {
-    margin: 9px 0px;
+    margin: 0px;
   }
 
   .name {
@@ -107,7 +185,7 @@
     color: #999999;
   }
 
-  .buttonSave {
+  .buttonFav {
     border: none;
     cursor: pointer;
     background: none;
