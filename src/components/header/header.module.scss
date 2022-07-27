@@ -1,0 +1,53 @@
+@import"../../App.scss";
+@media (min-width: 930px) and (max-width: 4000px) {
+    .logo{
+        width: 100px;
+        height: 40px;
+}
+
+}
+
+
+
+
+@media (max-width: 930px) {
+    .containerHeader{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-flow: column;
+        background-color: rgb(0, 0, 0);
+        top:1524px
+    }
+
+    .titleSelection{
+        font-family: sans-serif;
+        font-size: bold 18px;
+        color: #FFFF;
+    }
+
+    .logo{
+        width: 123.33px;
+        height: 42px;
+    }
+
+    .filtersButtons{
+        width: 140px;
+        height: 42.93px;
+        border: solid 4px;
+        border-color: #6B63B5;
+        background-color: #0000;
+        font-family: 'Open Sans';
+        font-size: 13px;
+        color:#FFFF;
+        font-weight: 600;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .filtersButtons:hover {
+        background-color: rgba(107, 99, 181, 0.6)
+        ;
+    }
+
+}
