@@ -82,10 +82,10 @@ export function ModalAdd(props) {
                 </section>
               </section>
               <section className={styles.attachImageArea}>
-                    <div>FOTOGRAFIA</div>
+                <div>FOTOGRAFIA</div>
               </section>
               <section className={styles.saveButtonArea}>
-                    <button className={styles.saveButtonModal}>Guardar</button>
+                <button className={styles.saveButtonModal}>Guardar</button>
               </section>
             </div>
           </div>

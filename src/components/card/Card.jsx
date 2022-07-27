@@ -5,11 +5,11 @@ import iconFavorites from "../../img/iconFavorites.png";
 const Card = () => {
   return (
     <>
-    <section className={styles.cardCharacter}>
-          <section className={styles.photoContainer}>
-            <img alt="photoStudent"></img>
-          </section>
-        
+      <section className={styles.cardCharacter}>
+        <section className={styles.photoContainer}>
+          <img alt="photoStudent"></img>
+        </section>
+
         <section className={styles.infoCharacter}>
           <h2 className={styles.name}>Harry Potter</h2>
           <section className={styles.topSectionCard}>
@@ -37,7 +37,7 @@ const Card = () => {
             </section>
           </section>
         </section>
-    </section>
+      </section>
     </>
   );
 };

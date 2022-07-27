@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styles from "./footer.module.scss";
 import ModalAdd from "../modalAdd/ModalAdd";
 import { AddCharacter } from "../../icon/AddCharacter";
