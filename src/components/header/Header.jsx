@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./header.module.scss";
-import imgHP from "../../img/imgHP.png";
+import LogoHarry from "../../icon/LogoHarry";
+
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <section className={`${styles.containerHeader} ${styles.hogwarts}`}>
         <main>
           <figure>
-            <img className={styles.logo} src={imgHP} alt="imgLogo" />
+            <LogoHarry/>
           </figure>
         </main>
         <h2 className={styles.titleSelection}>Selecciona un filtro</h2>

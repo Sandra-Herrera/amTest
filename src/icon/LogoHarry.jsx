@@ -46,3 +46,5 @@ export const LogoHarry = () => {
     </svg>
   );
 };
+
+export default LogoHarry;

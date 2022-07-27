@@ -1,9 +1,6 @@
 @import "../../App.scss";
 @media (min-width: 930px) and (max-width: 4000px) {
-  .logo {
-    width: 100px;
-    height: 40px;
-  }
+
   .hogwarts {
     background-image: url("../../img/imgHogwarts.png");
     width: 50%;
@@ -22,11 +19,6 @@
     font-family: sans-serif;
     font-size: bold 18px;
     color: #ffff;
-  }
-
-  .logo {
-    width: 123.33px;
-    height: 42px;
   }
 
   .filtersButtons {
@@ -69,11 +61,6 @@
     font-family: sans-serif;
     font-size: bold 18px;
     color: #ffff;
-  }
-
-  .logo {
-    width: 123.33px;
-    height: 42px;
   }
 
   .filtersButtons {

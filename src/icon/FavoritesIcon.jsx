@@ -10,3 +10,5 @@ export const FavoritesIcon = () => {
     </svg>
   );
 };
+
+export default FavoritesIcon;
