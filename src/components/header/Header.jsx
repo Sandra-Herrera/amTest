@@ -6,14 +6,14 @@ import LogoHarry from "../../icon/LogoHarry";
 const Header = () => {
   return (
     <>
-      <section className={`${styles.containerHeader} ${styles.hogwarts}`}>
+      <section className={styles.containerHeader}>
         <main>
           <figure>
             <LogoHarry/>
           </figure>
         </main>
         <h2 className={styles.titleSelection}>Selecciona un filtro</h2>
-        <section>
+        <section className={styles.filterArea}>
           <button className={styles.filtersButtons}> ESTUDIANTES</button>
           <button className={styles.filtersButtons}>STAFF</button>
         </section>
