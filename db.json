@@ -515,7 +515,7 @@
       "actor": "Jamie Waylett",
       "alive": false,
       "image": "http://hp-api.herokuapp.com/images/crabbe.jpg",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": 23,

@@ -1,0 +1,97 @@
+{
+  "products": {
+    "products": [
+      {
+        "simple_sku": "ec-86228791-a1",
+        "sku": "mi-85808509-q",
+        "upc": "459411",
+        "product_name": "Gorgeous Cotton Table",
+        "price": "$2844.00",
+        "created_at": "Wed Jul 06 2022 20:08:46 GMT-0500 (Central Daylight Time)",
+        "enable": "true"
+      },
+      {
+        "simple_sku": "nw-98925208-f",
+        "sku": "rm-29553828-c",
+        "upc": "270044",
+        "product_name": "Elegant Granite Cheese",
+        "price": "$2808.00",
+        "created_at": "Tue Jun 14 2022 12:06:44 GMT-0500 (Central Daylight Time)",
+        "enable": "false"
+      },
+      {
+        "simple_sku": "kt-49426215-i",
+        "sku": "mg-53674530-o",
+        "upc": "162622",
+        "product_name": "Electronic Frozen Shoes",
+        "price": "$2154.00",
+        "created_at": "Sat Apr 02 2022 11:06:41 GMT-0600 (Central Standard Time)",
+        "enable": "false"
+      },
+      {
+        "simple_sku": "jf-30763077-u",
+        "sku": "yf-32518992-w",
+        "upc": "515868",
+        "product_name": "Luxurious Plastic Chair",
+        "price": "$2599.00",
+        "created_at": "Sun Jun 12 2022 16:44:05 GMT-0500 (Central Daylight Time)",
+        "enable": "true"
+      },
+      {
+        "simple_sku": "kp-17313018-v",
+        "sku": "co-38321354-f",
+        "upc": "910091",
+        "product_name": "Tasty Concrete Chair",
+        "price": "$3072.00",
+        "created_at": "Sun Apr 10 2022 00:15:10 GMT-0500 (Central Daylight Time)",
+        "enable": "true"
+      },
+      {
+        "simple_sku": "ui-52646319-h",
+        "sku": "fc-73564967-b",
+        "upc": "217662",
+        "product_name": "Fantastic Concrete Table",
+        "price": "$2913.00",
+        "created_at": "Fri Mar 11 2022 15:47:08 GMT-0600 (Central Standard Time)",
+        "enable": "false"
+      },
+      {
+        "simple_sku": "xj-85161188-u",
+        "sku": "cd-64901834-a",
+        "upc": "873562",
+        "product_name": "Modern Fresh Shirt",
+        "price": "$2676.00",
+        "created_at": "Wed Mar 02 2022 20:22:47 GMT-0600 (Central Standard Time)",
+        "enable": "true"
+      },
+      {
+        "simple_sku": "xm-69219290-q",
+        "sku": "nq-88744046-h",
+        "upc": "888549",
+        "product_name": "Awesome Frozen Fish",
+        "price": "$2280.00",
+        "created_at": "Thu Feb 10 2022 00:30:15 GMT-0600 (Central Standard Time)",
+        "enable": "true"
+      },
+      {
+        "simple_sku": "zz-99645875-t",
+        "sku": "nq-88837420-n",
+        "upc": "106750",
+        "product_name": "Practical Bronze Hat",
+        "price": "$1473.00",
+        "created_at": "Mon Jul 11 2022 13:50:42 GMT-0500 (Central Daylight Time)",
+        "enable": "false"
+      },
+      {
+        "simple_sku": "tz-97503891-f",
+        "sku": "wo-74031692-w",
+        "upc": "418268",
+        "product_name": "Incredible Plastic Chicken",
+        "price": "$2168.00",
+        "created_at": "Thu Feb 17 2022 17:37:31 GMT-0600 (Central Standard Time)",
+        "enable": "false"
+      }
+    ],
+    "total": "10"
+  }
+}
